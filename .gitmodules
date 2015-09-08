@@ -1,0 +1,3 @@
+[submodule "allors"]
+	path = allors
+	url = http://github.com/allors/allors
