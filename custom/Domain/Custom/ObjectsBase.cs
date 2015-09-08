@@ -24,15 +24,15 @@ namespace Allors
 
     public abstract partial class ObjectsBase<T>
     {
-        protected virtual void AppsPrepare(Setup setup)
+        protected virtual void CustomPrepare(Setup setup)
         {
         }
 
-        protected virtual void AppsSetup(Setup setup)
+        protected virtual void CustomSetup(Setup setup)
         {
         }
 
-        protected virtual void AppsSecure(Security config)
+        protected virtual void CustomSecure(Security config)
         {
         }
     }

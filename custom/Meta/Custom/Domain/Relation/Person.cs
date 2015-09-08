@@ -11,5 +11,10 @@ namespace Allors.Meta
 		[Type(typeof(MediaClass))]
 		[Multiplicity(Multiplicity.OneToOne)]
 		public RelationType Picture;
+
+        internal override void CustomExtend()
+	    {
+	        this.Picture.RoleType.IsRequired = true;
+	    }
 	}
 }
