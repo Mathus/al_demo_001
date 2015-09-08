@@ -23,7 +23,7 @@ namespace Allors.Meta
 {
     public partial class Composite
     {
-        internal virtual void AppsExtend()
+        internal virtual void CustomExtend()
         {
         }
     }

@@ -65,6 +65,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\..\allors\Base\Resources\Base\ErrorMessages.resx">
+      <Link>Base\ErrorMessages.resx</Link>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\ErrorMessages.nl.resx" />
     <EmbeddedResource Include="Apps\ErrorMessages.resx" />
     <EmbeddedResource Include="ErrorMessages.resx">
