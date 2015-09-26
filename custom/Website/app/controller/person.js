@@ -4,6 +4,6 @@
 
     };
 
-    module.controller("Person", personController);
+    module.controller("personController", personController);
 
 }(angular.module("app")));
