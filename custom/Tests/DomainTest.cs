@@ -33,11 +33,11 @@ namespace Allors
 
     public class DomainTest
     {
-        private ISession databaseSession;
+        private ISession session;
 
-        public ISession DatabaseSession
+        public ISession Session
         {
-            get { return this.databaseSession; }
+            get { return this.session; }
         }
 
         [SetUp]
@@ -49,8 +49,8 @@ namespace Allors
         [TearDown]
         public virtual void TearDown()
         {
-            this.databaseSession.Rollback();
-            this.databaseSession = null;
+            this.session.Rollback();
+            this.session = null;
         }
 
         protected void Init(bool setup)
@@ -66,9 +66,9 @@ namespace Allors
                 Config.Default.Init();
             }
 
-            this.databaseSession = Config.Default.CreateSession();
+            this.session = Config.Default.CreateSession();
 
-            new SecurityCache(this.databaseSession).Invalidate();
+            new SecurityCache(this.session).Invalidate();
         }
 
         protected IObject[] GetObjects(ISession session, Composite objectType)

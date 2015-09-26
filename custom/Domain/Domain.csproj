@@ -388,8 +388,12 @@
     <Compile Include="..\..\allors\Base\Domain\Base\Unit\DateTimeFactory.cs">
       <Link>Base\Unit\DateTimeFactory.cs</Link>
     </Compile>
+    <Compile Include="Custom\Financial\Invoices.cs" />
     <Compile Include="Custom\ObjectsBase.cs" />
+    <Compile Include="Custom\Financial\Invoice.cs" />
     <Compile Include="Custom\Relation\Person.cs" />
+    <Compile Include="Custom\Security\Security.cs" />
+    <Compile Include="Custom\Security\Roles.cs" />
     <Compile Include="Custom\Setup.cs" />
     <Compile Include="Generated\AccessControl.g.cs" />
     <Compile Include="Generated\AccessControlledObject.g.cs" />
@@ -403,6 +407,7 @@
     <Compile Include="Generated\Image.g.cs" />
     <Compile Include="Generated\ImageCreateResponsive.g.cs" />
     <Compile Include="Generated\ImageCreateThumbnail.g.cs" />
+    <Compile Include="Generated\Invoice.g.cs" />
     <Compile Include="Generated\Language.g.cs" />
     <Compile Include="Generated\Locale.g.cs" />
     <Compile Include="Generated\Localised.g.cs" />

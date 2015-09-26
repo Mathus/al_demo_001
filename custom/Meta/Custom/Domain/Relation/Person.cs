@@ -14,7 +14,6 @@ namespace Allors.Meta
 
         internal override void CustomExtend()
 	    {
-	        this.Picture.RoleType.IsRequired = true;
 	    }
 	}
 }

@@ -170,17 +170,29 @@
     <Compile Include="..\..\allors\Base\Meta\Base\Domain\UserGroup.cs">
       <Link>Base\Domain\UserGroup.cs</Link>
     </Compile>
+    <Compile Include="..\..\allors\Base\Meta\Base\Meta\Class.cs">
+      <Link>Base\Meta\Class.cs</Link>
+    </Compile>
     <Compile Include="..\..\allors\Base\Meta\Base\Meta\Composite.cs">
       <Link>Base\Meta\Composite.cs</Link>
     </Compile>
     <Compile Include="..\..\allors\Base\Meta\Base\Meta\ConcreteRoleType.cs">
       <Link>Base\Meta\ConcreteRoleType.cs</Link>
     </Compile>
+    <Compile Include="..\..\allors\Base\Meta\Base\Meta\Groups.cs">
+      <Link>Base\Meta\Groups.cs</Link>
+    </Compile>
     <Compile Include="..\..\allors\Base\Meta\Base\Meta\Path.cs">
       <Link>Base\Meta\Path.cs</Link>
     </Compile>
     <Compile Include="..\..\allors\Base\Meta\Base\Meta\RoleType.cs">
       <Link>Base\Meta\RoleType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\allors\Base\Meta\Base\Meta\Tree.cs">
+      <Link>Base\Meta\Tree.cs</Link>
+    </Compile>
+    <Compile Include="..\..\allors\Base\Meta\Base\Meta\TreeNode.cs">
+      <Link>Base\Meta\TreeNode.cs</Link>
     </Compile>
     <Compile Include="..\..\allors\Core\Meta\Core\Domain\AllorsBinaryUnit.cs">
       <Link>Core\Domain\AllorsBinaryUnit.cs</Link>
@@ -306,14 +318,21 @@
       <Link>Core\Meta\ValidationLog.cs</Link>
     </Compile>
     <Compile Include="Custom\Domain\Custom.cs" />
+    <Compile Include="Custom\Domain\Invoice.cs" />
     <Compile Include="Custom\Domain\Relation\Person.cs" />
     <Compile Include="Custom\Meta\Composite.cs" />
     <Compile Include="Custom\MetaPopulation.v.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\allors\Base\Meta\Base\Meta\Tree.cd">
+      <Link>Base\Meta\Tree.cd</Link>
+    </None>
     <None Include="..\..\allors\Base\Meta\Base\RelationType.cd">
       <Link>Base\RelationType.cd</Link>
+    </None>
+    <None Include="..\..\allors\Core\Meta\Core\Generate.proj">
+      <Link>Core\Generate.proj</Link>
     </None>
     <None Include="..\..\allors\Core\Meta\Core\Overview.cd">
       <Link>Core\Overview.cd</Link>
