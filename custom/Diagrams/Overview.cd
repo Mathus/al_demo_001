@@ -1,30 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Interface Name="Allors.Domain.Budget" Collapsed="true">
-    <Position X="5.25" Y="1.25" Width="1.5" />
+  <Interface Name="Allors.Domain.Department">
+    <Position X="2.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAASAAIAAAgCAIAAAAAAAACAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAFAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAACAAAAA=</HashCode>
+      <FileName>domain.g.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Accountants" />
+      <Property Name="AccountantUsergroup" />
+      <Property Name="AccountantSecurityToken" />
+      <Property Name="Invoices" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="Allors.Domain.Person" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>domain.g.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Allors.Domain.CapitalBudget" Collapsed="true">
-    <Position X="3" Y="3.5" Width="1.5" />
+  <Interface Name="Allors.Domain.UserGroup" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAQAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>domain.g.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Members" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="Allors.Domain.User" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQAACBAAAAA=</HashCode>
+      <FileName>domain.g.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Allors.Domain.SecurityToken" Collapsed="true">
+    <Position X="5.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>domain.g.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Allors.Domain.AccountingPeriod" Collapsed="true">
-    <Position X="5.25" Y="3.5" Width="1.5" />
+  <Interface Name="Allors.Domain.Invoice" Collapsed="true">
+    <Position X="5.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAgQAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
-      <FileName>domain.g.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Allors.Domain.OperatingBudget" Collapsed="true">
-    <Position X="7.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>domain.g.cs</FileName>
     </TypeIdentifier>
   </Interface>
