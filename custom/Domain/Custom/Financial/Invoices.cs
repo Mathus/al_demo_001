@@ -9,7 +9,6 @@ namespace Allors.Domain
             var full = new[] { Operation.Read, Operation.Write, Operation.Execute };
 
             config.GrantAdministrator(this.ObjectType, full);
-
             config.GrantEmployee(this.ObjectType, Operation.Read);
         }
     }

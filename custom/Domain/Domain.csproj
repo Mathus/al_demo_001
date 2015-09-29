@@ -389,6 +389,7 @@
       <Link>Base\Unit\DateTimeFactory.cs</Link>
     </Compile>
     <Compile Include="Custom\Financial\Invoices.cs" />
+    <Compile Include="Custom\Financial\Department.cs" />
     <Compile Include="Custom\ObjectsBase.cs" />
     <Compile Include="Custom\Financial\Invoice.cs" />
     <Compile Include="Custom\Relation\Person.cs" />
@@ -403,6 +404,7 @@
     <Compile Include="Generated\Currency.g.cs" />
     <Compile Include="Generated\Deletable.g.cs" />
     <Compile Include="Generated\DeletableDelete.g.cs" />
+    <Compile Include="Generated\Department.g.cs" />
     <Compile Include="Generated\Enumeration.g.cs" />
     <Compile Include="Generated\Image.g.cs" />
     <Compile Include="Generated\ImageCreateResponsive.g.cs" />

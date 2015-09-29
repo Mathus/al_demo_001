@@ -318,7 +318,8 @@
       <Link>Core\Meta\ValidationLog.cs</Link>
     </Compile>
     <Compile Include="Custom\Domain\Custom.cs" />
-    <Compile Include="Custom\Domain\Invoice.cs" />
+    <Compile Include="Custom\Domain\Relation\Invoice.cs" />
+    <Compile Include="Custom\Domain\Relation\Department.cs" />
     <Compile Include="Custom\Domain\Relation\Person.cs" />
     <Compile Include="Custom\Meta\Composite.cs" />
     <Compile Include="Custom\MetaPopulation.v.cs" />

@@ -15,7 +15,7 @@ namespace Allors.Domain
 		public interface Deletable  : Object 
 		{
 		}
-		public interface Enumeration  : Object, UniquelyIdentifiable, AccessControlledObject 
+		public interface Enumeration  : Object, AccessControlledObject, UniquelyIdentifiable 
 		{
 						LocalisedText LocalisedNames {set;}
 
@@ -68,7 +68,7 @@ namespace Allors.Domain
 						global::System.Guid UniqueId {set;}
 
 		}
-		public interface User  : Object, SecurityTokenOwner, Localised, AccessControlledObject 
+		public interface User  : Object, SecurityTokenOwner, AccessControlledObject, Localised 
 		{
 						global::System.Boolean? UserEmailConfirmed {set;}
 
@@ -79,7 +79,7 @@ namespace Allors.Domain
 						global::System.String UserPasswordHash {set;}
 
 		}
-		public interface AccessControl  : Object, Deletable, AccessControlledObject 
+		public interface AccessControl  : Object, AccessControlledObject, Deletable 
 		{
 						UserGroup SubjectGroups {set;}
 
@@ -162,7 +162,7 @@ namespace Allors.Domain
 						User User {set;}
 
 		}
-		public interface Media  : Object, UniquelyIdentifiable, AccessControlledObject, Deletable 
+		public interface Media  : Object, Deletable, UniquelyIdentifiable, AccessControlledObject 
 		{
 						MediaType MediaType {set;}
 
@@ -192,7 +192,7 @@ namespace Allors.Domain
 						global::System.Int32 OperationEnum {set;}
 
 		}
-		public interface Person  : Object, User, UniquelyIdentifiable, AccessControlledObject 
+		public interface Person  : Object, AccessControlledObject, User, UniquelyIdentifiable 
 		{
 						global::System.String LastName {set;}
 
@@ -203,14 +203,14 @@ namespace Allors.Domain
 						Media Picture {set;}
 
 		}
-		public interface PrintQueue  : Object, AccessControlledObject, UniquelyIdentifiable 
+		public interface PrintQueue  : Object, UniquelyIdentifiable, AccessControlledObject 
 		{
 						Printable Printables {set;}
 
 						global::System.String Name {set;}
 
 		}
-		public interface Role  : Object, AccessControlledObject, UniquelyIdentifiable 
+		public interface Role  : Object, UniquelyIdentifiable, AccessControlledObject 
 		{
 						Permission Permissions {set;}
 
@@ -263,6 +263,11 @@ namespace Allors.Domain
 		public interface Invoice  : Object, AccessControlledObject 
 		{
 						global::System.Int32? Total {set;}
+
+		}
+		public interface Department  : Object 
+		{
+						Person Accountants {set;}
 
 		}
 }
