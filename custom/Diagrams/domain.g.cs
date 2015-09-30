@@ -68,7 +68,7 @@ namespace Allors.Domain
 						global::System.Guid UniqueId {set;}
 
 		}
-		public interface User  : Object, SecurityTokenOwner, AccessControlledObject, Localised 
+		public interface User  : Object, AccessControlledObject, SecurityTokenOwner, Localised 
 		{
 						global::System.Boolean? UserEmailConfirmed {set;}
 
@@ -148,7 +148,7 @@ namespace Allors.Domain
 						Country Country {set;}
 
 		}
-		public interface LocalisedText  : Object, Localised, AccessControlledObject 
+		public interface LocalisedText  : Object, AccessControlledObject, Localised 
 		{
 						global::System.String Text {set;}
 
@@ -210,7 +210,7 @@ namespace Allors.Domain
 						global::System.String Name {set;}
 
 		}
-		public interface Role  : Object, UniquelyIdentifiable, AccessControlledObject 
+		public interface Role  : Object, AccessControlledObject, UniquelyIdentifiable 
 		{
 						Permission Permissions {set;}
 
@@ -235,7 +235,7 @@ namespace Allors.Domain
 						SecurityToken DefaultSecurityToken {set;}
 
 		}
-		public interface StringTemplate  : Object, UniquelyIdentifiable, Localised 
+		public interface StringTemplate  : Object, Localised, UniquelyIdentifiable 
 		{
 						global::System.String Body {set;}
 
@@ -249,7 +249,7 @@ namespace Allors.Domain
 						ObjectState ToState {set;}
 
 		}
-		public interface UserGroup  : Object, UniquelyIdentifiable, AccessControlledObject 
+		public interface UserGroup  : Object, AccessControlledObject, UniquelyIdentifiable 
 		{
 						Role Role {set;}
 
@@ -268,6 +268,12 @@ namespace Allors.Domain
 		public interface Department  : Object 
 		{
 						Person Accountants {set;}
+
+						UserGroup AccountantUsergroup {set;}
+
+						SecurityToken AccountantSecurityToken {set;}
+
+						Invoice Invoices {set;}
 
 		}
 }

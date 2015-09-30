@@ -392,6 +392,9 @@
     <Compile Include="Custom\Financial\Department.cs" />
     <Compile Include="Custom\ObjectsBase.cs" />
     <Compile Include="Custom\Financial\Invoice.cs" />
+    <Compile Include="Custom\Relation\Department.cs" />
+    <Compile Include="Custom\Relation\Departments.cs" />
+    <Compile Include="Custom\Relation\Invoice.cs" />
     <Compile Include="Custom\Relation\Person.cs" />
     <Compile Include="Custom\Security\Security.cs" />
     <Compile Include="Custom\Security\Roles.cs" />
